@@ -6,7 +6,7 @@
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 18:52:40 by tafocked          #+#    #+#             */
-/*   Updated: 2025/05/19 21:08:27 by tafocked         ###   ########.fr       */
+/*   Updated: 2025/05/19 21:32:28 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,12 +51,15 @@ void PmergeMe::sort()
 	std::cout << "Before sorting:";
 	for (size_t i = 0; i < _vector.size(); ++i)
 		std::cout << " " << _vector[i];
+	
 	clock_t vector_time = clock();
 	mergeSort(_vector, 0, _vector.size() - 1);
 	vector_time = clock() - vector_time;
+
 	deque_time = clock();
 	mergeSort(_deque, 0, _deque.size() - 1);
 	deque_time = clock() - deque_time;
+	
 	std::cout << "\nAfter sorting:";
 	for (size_t i = 0; i < _deque.size(); ++i)
 		std::cout << " " << _deque[i];
