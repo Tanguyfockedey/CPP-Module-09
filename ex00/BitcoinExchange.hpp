@@ -6,7 +6,7 @@
 /*   By: tafocked <tafocked@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 17:05:36 by tafocked          #+#    #+#             */
-/*   Updated: 2025/05/19 17:08:43 by tafocked         ###   ########.fr       */
+/*   Updated: 2025/05/19 18:10:34 by tafocked         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@
 #include <sstream>
 #include <iostream>
 #include <fstream>
-#include <ctime>
 #include <cstdlib>
-#include <cstring>
 
 
 class BitcoinExchange
